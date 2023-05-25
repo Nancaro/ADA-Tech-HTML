@@ -1,0 +1,58 @@
+<!-- Questão 7.
+Agora, você deve criar um formulário HTML de cadastro de pessoas em
+uma loja virtual. Nesse formulário, você deve solicitar as seguintes
+informações ao usuário:
+● Nome
+● E-mail
+● CPF
+● Gênero
+● Data de Nascimento
+● Telefone
+● Quer ou não receber notificações por WhatsApp
+● Quer ou não receber ofertas por e-mail
+-->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario HTML</title>
+  </head>
+<body>
+  <main>
+<h3>Formulario</h3>
+<hr>
+<br>
+<form action="" method="">
+  <div>
+    <label for="texto"> Nome:</label>
+   <input type="text" id="texto" placeholder="informe o seu nome..." name="nome">
+  </div>
+  <div>
+    <label for="email"> Input de email:</label>
+   <input type="email" id="email" placeholder="informe o seu e-mail...">
+  </div>
+  <div>
+    <label for="CPF"> CPF:</label>
+   <input type="CPF" id="CPF" placeholder="informe o seu CPF..." name="CPF">
+  </div>
+  <div>
+    <label for="data"> Data de nascimento:</label>
+   <input type="date" id="data" placeholder="informe o data de nascimento..." name="data">
+  </div>
+  <div>
+    <label for="noti"> Voce quer receber notificações por WhatsApp:</label>
+   <input type="checkbox" id="noti" name="noti">
+  </div>
+  <div>
+    <label for="not-email"> Voce quer receber notificações por e-mail:</label>
+   <input type="checkbox" id="not-email" name="not-email">
+  </div>
+  <textarea name="bio" id="bio" cols="80" rows="10"></textarea>
+  <div>
+   <input type="submit" id="enviar" name="enviar" value="Enviar">
+  </div>
+  </div>
+</form>
+</main>
+</body>

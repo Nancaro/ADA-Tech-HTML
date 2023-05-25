@@ -1,0 +1,89 @@
+<!-- Questão 10.
+Você deverá criar um código HTML que contenha listas ordenadas e listas não ordenadas. Além
+disso, aproveite para utilizar listas não ordenadas para criar uma barra de navegação na sua
+página.-->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Listas HTML</title>
+    <style>
+      /* Estilo da barra de navegação */
+      ul.navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+  ul.navbar li {
+    float: left;
+  }
+  
+  ul.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul.navbar li a:hover {
+    background-color: #111;
+  }
+  
+  /* Estilo das listas ordenadas e não ordenadas */
+  ul.lista-ordenada {
+    list-style-type: decimal;
+  }
+  
+  ul.lista-nao-ordenada {
+    list-style-type: disc;
+  }
+  
+  li.sub-item {
+    list-style-type: square;
+  }
+</style>
+  </head>
+  <body>
+    <!-- Barra de navegação -->
+    <ul class="navbar">
+      <li><a href="#">Página Inicial</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Serviços</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+
+<!-- Lista ordenada -->
+<h2>Lista Ordenada:</h2>
+<ul class="lista-ordenada">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+<!-- Lista não ordenada -->
+<h2>Lista Não Ordenada:</h2>
+<ul class="lista-nao-ordenada">
+  <li>Item A</li>
+  <li>Item B</li>
+  <li>Item C</li>
+</ul>
+
+<!-- Lista não ordenada com subitens -->
+<h2>Lista Não Ordenada com Subitens:</h2>
+<ul class="lista-nao-ordenada">
+  <li>Item 1</li>
+  <li>Item 2
+    <ul>
+      <li class="sub-item">Subitem 1</li>
+      <li class="sub-item">Subitem 2</li>
+    </ul>
+  </li>
+  <li>Item 3</li>
+</ul>
+  </body>
+</html>
